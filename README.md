@@ -25,6 +25,8 @@ This is project built in response to the 2021 Shopify Internship Frontend challe
 - Movies in search results can be added and removed from the nomination list.
 - If a search result has already been nominated, its nominate button is disabled.
 - Pagination of results of search
+- Saves nomination when you leave the page
+- Dynamic page contents and animations
 
 # 👽 Extra
 
