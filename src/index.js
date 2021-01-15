@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import axios from 'axios';
+
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.params = {}
+axios.defaults.params["apiKey"] = process.env.REACT_APP_API_KEY;
 
 ReactDOM.render(
   <BrowserRouter>
