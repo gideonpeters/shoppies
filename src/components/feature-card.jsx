@@ -54,7 +54,7 @@ const FeatureCard = ({ max }) => {
                 <div className="text-2xl text-white mt-5 text-center">Movie awards for entrepreneurs</div>
                 <div className="pt-20 w-10/12">
                     <div className="flex bg-white bg-opacity-70 h-14 rounded-full justify-between items-center px-8">
-                        <input pattern="/^.{3,}$/" onChange={(e) => { handleChange(e); }} type="text" name="" id="" className="h-14 w-11/12 outline-none bg-white bg-opacity-5" />
+                        <input placeholder="Enter at least 3 characters and search begins automatically" pattern="/^.{3,}$/" onChange={(e) => { handleChange(e) }} type="text" className="h-14 w-11/12 outline-none bg-white bg-opacity-5" />
                         {<MdSearch className="text-3xl cursor-pointer" />}
                     </div>
                 </div>

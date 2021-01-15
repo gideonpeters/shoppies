@@ -8,8 +8,10 @@ const Navbar = () => {
         history.push("/");
     }
     return <div className="container mx-auto flex items-end pt-4 px-3">
-        <img src={Logo} alt="page logo" className="h-10" onClick={handleClick} />
-        <div className="font-bold ml-2 text-2xl italic">The Shoppies</div>
+        <div className="flex items-end cursor-pointer" onClick={handleClick}>
+            <img src={Logo} alt="page logo" className="h-10" />
+            <div className="font-bold ml-2 text-2xl italic">The Shoppies</div>
+        </div>
     </div>
 }
 
