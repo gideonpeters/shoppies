@@ -11,11 +11,9 @@ const FeatureCard = ({ max }) => {
     const debouncedSearchInput = useDebounce(search, 500);
 
     async function fetchMovies() {
-        setIsLoading(true);
         if (debouncedSearchInput.length >= 3) {
             await axios.get(`?s=${search}`).then(res => {
                 setIsLoading(false);
-
                 if (res.data["Response"] === "True") {
                     setMovies(res.data["Search"])
                     setTotal(res.data["totalResults"])
@@ -32,7 +30,7 @@ const FeatureCard = ({ max }) => {
 
     useEffect(() => {
         fetchMovies();
-    }, [debouncedSearchInput])
+    }, [debouncedSearchInput, search])
 
 
     var sectionStyle = {

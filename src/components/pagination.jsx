@@ -8,14 +8,12 @@ const Pagination = () => {
     const { search, setMovies, movies, total, setIsLoading, } = useContext(MainContext)
 
     async function fetchData() {
-        // setIsLoading(true)
-        // console.log(currentPage)
+        setIsLoading(true)
         if (currentPage > 1) {
             await axios.get(`?s=${search}&page=${currentPage}`).then(res => {
                 setIsLoading(false)
                 if (res.data["Response"] === "True") {
                     setMovies(res.data["Search"])
-                    // setCurrentPage(currentPage++);
                 } else {
                     setMovies([])
                 }
@@ -28,7 +26,6 @@ const Pagination = () => {
         if (total > (currentPage * 10) + (10 - movies.length)) {
             let page = currentPage + 1;
             setCurrentPage(page);
-            setIsLoading(true)
         }
     }
 

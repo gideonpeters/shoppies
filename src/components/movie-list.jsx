@@ -9,7 +9,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 const MovieList = () => {
     const { movies, search, isLoading } = useContext(MainContext);
 
-    return <div>
+    return <div className="h-96 max-h-full flex flex-col">
         {isLoading ? <div>
             <TitleText title="Fetching Movies" />
             <div className="flex justify-center mt-10">
@@ -33,7 +33,7 @@ const MovieList = () => {
                         <div>No results for this search...</div>
                     </div>}
             </div>}
-        <div className="flex w-full justify-center">
+        <div className="flex w-full justify-center mt-auto">
             {movies.length > 0 && <Pagination />}
         </div>
     </div>
