@@ -13,8 +13,7 @@ const MovieList = () => {
         {isLoading ? <div>
             <TitleText title="Fetching Movies" />
             <div className="flex justify-center mt-10">
-
-                <AiOutlineLoading3Quarters className="spin-animation text-9xl" />
+                <AiOutlineLoading3Quarters color={"green"} className="spin-animation text-9xl green-500" />
             </div>
         </div> :
             <div>

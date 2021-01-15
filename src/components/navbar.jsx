@@ -7,9 +7,9 @@ const Navbar = () => {
     function handleClick() {
         history.push("/");
     }
-    return <div className="container mx-auto flex items-center pt-4 px-3">
-        <img src={Logo} alt="page logo" className="h-14" onClick={handleClick} />
-        <div className="font-bold text-gray-700 ml-auto">The Shoppies</div>
+    return <div className="container mx-auto flex items-end pt-4 px-3">
+        <img src={Logo} alt="page logo" className="h-10" onClick={handleClick} />
+        <div className="font-bold ml-2 text-2xl italic">The Shoppies</div>
     </div>
 }
 

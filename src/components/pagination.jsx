@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import MainContext from "../context/main-context";
 import axios from "axios";
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 const Pagination = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -36,9 +36,9 @@ const Pagination = () => {
         fetchData();
     }, [currentPage])
     return <div className="flex items-center">
-        <HiChevronLeft className="text-gray-500 cursor-pointer" onClick={decrement} />
+        <BsArrowLeft className="text-gray-500 cursor-pointer w-16" onClick={decrement} />
         <div className="mx-2">{((currentPage - 1) * 10) + 1} - {(currentPage * 10) + movies.length - 10} of {total}</div>
-        <HiChevronRight className="text-gray-500 cursor-pointer" onClick={increment} />
+        <BsArrowRight className="text-gray-500 cursor-pointer w-16" onClick={increment} />
 
     </div>
 }

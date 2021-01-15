@@ -3,8 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        green: {
+          '300': '#95BF47',
+          '400': '#008060',
+          '500': '#064A48',
+        }
+      },
       fontFamily: {
-        sans: ['"Poppins"', 'sans-serif']
+        sans: ['"Roboto"', 'sans-serif']
       }
     },
   },

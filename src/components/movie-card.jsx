@@ -16,14 +16,14 @@ const MovieCard = ({ movie }) => {
 
 
     return <div className="flex">
-        <div className="flex bg-blue-200 h-44 w-7/12 justify-between p-8 cursor-pointer mr-3" style={{ backgroundImage: `url(${movie["Poster"]})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center center' }}></div>
+        <div className="flex bg-green-300 h-44 w-7/12 justify-between p-8 cursor-pointer mr-3" style={{ backgroundImage: `url(${movie["Poster"]})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center center' }}></div>
         <div className="flex flex-col w-5/12">
             <div>
                 <div className="mb-4">{movie["Title"]}</div>
                 <div className="text-gray-500">{movie["Year"]}</div>
             </div>
             <div className="mt-auto">
-                <button disabled={nominations.some(isContained)} onClick={nominate} className="bg-yellow-400 text-xs px-5 py-2 rounded focus:outline-none hover:opacity-80 disabled:opacity-50">Nominate</button>
+                <button disabled={nominations.some(isContained)} onClick={nominate} className="bg-green-400 text-white text-xs px-5 py-2 rounded focus:outline-none hover:opacity-80 disabled:opacity-50">Nominate</button>
             </div>
         </div>
     </div>
