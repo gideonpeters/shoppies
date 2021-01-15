@@ -1,12 +1,12 @@
 import { MdSearch } from "react-icons/md";
 import Background from '../assets/images/shoppies-bg.png';
-import { useEffect, useContext, useState } from "react";
+import { useEffect, useContext } from "react";
 import MainContext from "../context/main-context";
 import axios from 'axios';
 import useDebounce from "../hooks/use-debounce";
 
 const FeatureCard = ({ max }) => {
-    const { search, setSearch, setMovies, setTotal, isLoading, setIsLoading } = useContext(MainContext)
+    const { search, setSearch, setMovies, setTotal, setIsLoading } = useContext(MainContext)
 
     const debouncedSearchInput = useDebounce(search, 500);
 
