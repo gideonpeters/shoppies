@@ -30,7 +30,7 @@ const Pagination = () => {
     }
 
     function decrement() {
-        if (currentPage > 0) {
+        if (currentPage > 1) {
             let page = currentPage - 1;
             setCurrentPage(page);
         }
