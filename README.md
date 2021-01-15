@@ -2,7 +2,7 @@
 
 💫 Deployed Link: [https://gideon-shoppies.netlify.app/](https://gideon-shoppies.netlify.app/)
 
-![The%20Shoppies%20Movie%20awards%20for%20entrepreneurs%200dc3527035ec4e90b885cf75d4d926be/Screenshot_2021-01-15_at_14.42.46.png](The%20Shoppies%20Movie%20awards%20for%20entrepreneurs%200dc3527035ec4e90b885cf75d4d926be/Screenshot_2021-01-15_at_14.42.46.png)
+![./src/assets/images/preview.png](The%20Shoppies%20Movie%20awards%20for%20entrepreneurs%200dc3527035ec4e90b885cf75d4d926be/Screenshot_2021-01-15_at_14.42.46.png)
 
 # 🗒️ Summary
 
