@@ -2,7 +2,11 @@
 
 💫 Deployed Link: [https://gideon-shoppies.netlify.app/](https://gideon-shoppies.netlify.app/)
 
+## Home Preview
 ![https://github.com/gideonpeters/shoppies/blob/main/src/assets/images/preview.png](https://github.com/gideonpeters/shoppies/blob/main/src/assets/images/preview.png)
+
+## Error Page Preview
+![https://github.com/gideonpeters/shoppies/blob/main/src/assets/images/error-preview.png](https://github.com/gideonpeters/shoppies/blob/main/src/assets/images/error-preview.png)
 
 # 🗒️ Summary
 
