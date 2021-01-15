@@ -5,6 +5,7 @@ import Error from './pages/error.jsx';
 import { Switch, Route } from 'react-router-dom';
 import { MainProvider } from './context/main-context';
 import { useState } from 'react';
+import Navbar from './components/navbar';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -18,6 +19,7 @@ function App() {
   return (
     <MainProvider value={store}>
       <main className="App">
+        <Navbar />
         <Switch>
           <Route path="/" component={Home} exact />
           <Route component={Error} />

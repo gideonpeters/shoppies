@@ -38,7 +38,8 @@ const FeatureCard = ({ max }) => {
         backgroundRepeat: 'no-repeat',
         height: `${!max ? '800px' : '28rem'}`,
         minHeight: '28rem',
-        backgroundImage: `url(${Background})`
+        backgroundImage: `url(${Background})`,
+        backgroundSize: "cover"
     };
 
     const handleChange = (e) => {
@@ -47,7 +48,7 @@ const FeatureCard = ({ max }) => {
     }
 
     return <div className="flex items-center justify-center align-middle relative mb-16" >
-        <div className="bg-blue-300 w-11/12 rounded-2xl p-16 z-40 relative " style={sectionStyle}>
+        <div className="bg-blue-300 w-full rounded-2xl p-16 z-40 relative " style={sectionStyle}>
             <div className="absolute bg-black bg-opacity-30 z-50 h-full w-full top-0 left-0 right-0 rounded-2xl flex flex-col items-center justify-center">
                 <div className="font-bold text-4xl text-white">The Shoppies:</div>
                 <div className="text-2xl text-white mt-5 text-center">Movie awards for entrepreneurs</div>

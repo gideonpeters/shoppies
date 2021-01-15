@@ -28,7 +28,7 @@ const MovieList = () => {
                     {movies.map((movie, ix) => <MovieCard key={ix} movie={movie} />)}
                 </div> :
                     <div className="flex flex-col items-center">
-                        <img src={Empty} alt="" className="h-52 my-10" />
+                        <img src={Empty} alt="all movies" className="h-52 my-10" />
                         <div>No results for this search...</div>
                     </div>}
             </div>}

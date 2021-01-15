@@ -21,7 +21,7 @@ const Home = () => {
     }, [storeNominations])
 
 
-    return <div className="container mx-auto w-screen overflow-x-hidden min-h-screen py-10">
+    return <div className="container mx-auto w-screen overflow-x-hidden min-h-screen pb-10 pt-5 px-3">
         <FeatureCard max={(movies.length > 0 || (search.length > 0 && !isLoading)) || nominations.length > 0} />
         <div className="flex lg:flex-row flex-col lg:justify-around items-center lg:items-start">
             <div className={(movies.length > 0 || (search.length > 0 && !isLoading)) ? "lg:w-6/12 w-11/12" : ""}>
