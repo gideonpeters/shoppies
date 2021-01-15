@@ -17,20 +17,25 @@ const MovieList = () => {
             </div>
         </div> :
             <div>
-                <div className="flex justify-between">
-                    <TitleText title={`Search Results for "${search}"`} />
-                    {movies.length > 0 && <Pagination />}
-                </div>
+                <TitleText title={`Search Results for "${search}"`} />
 
 
-                {movies.length > 0 ? <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mt-4">
-                    {movies.map((movie, ix) => <MovieCard key={ix} movie={movie} />)}
-                </div> :
-                    <div className="flex flex-col items-center">
+                {movies.length > 0 ?
+                    <div>
+                        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mt-4">
+                            {movies.map((movie, ix) => <MovieCard key={ix} movie={movie} />)}
+                        </div>
+
+                    </div>
+                    :
+                    <div className="flex flex-col items-center mb-8">
                         <img src={Empty} alt="all movies" className="h-52 my-10" />
                         <div>No results for this search...</div>
                     </div>}
             </div>}
+        <div className="flex w-full justify-center">
+            {movies.length > 0 && <Pagination />}
+        </div>
     </div>
 }
 

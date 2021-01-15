@@ -6,12 +6,12 @@ import axios from 'axios';
 import useDebounce from "../hooks/use-debounce";
 
 const FeatureCard = ({ max }) => {
-    const { search, setSearch, setMovies, setTotal, setIsLoading } = useContext(MainContext)
+    const { search, setSearch, setMovies, setTotal, setIsLoading, currentPage } = useContext(MainContext)
 
     const debouncedSearchInput = useDebounce(search, 500);
 
     async function fetchMovies() {
-        // setIsLoading(true);
+        setIsLoading(true);
         if (debouncedSearchInput.length >= 3) {
             await axios.get(`?s=${search}`).then(res => {
                 setIsLoading(false);
@@ -26,6 +26,7 @@ const FeatureCard = ({ max }) => {
             });
         } else {
             setMovies([])
+            setIsLoading(false);
         }
     }
 
