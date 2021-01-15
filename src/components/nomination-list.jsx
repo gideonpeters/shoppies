@@ -14,7 +14,7 @@ const NominationList = () => {
             <img src={Nominations} alt="all nominations" className="h-52" />
             <div className="mt-5">Your Nominations go here...</div>
         </div> :
-            <div className="overflow-y-scroll h-screen">
+            <div className="overflow-y-scroll max-h-screen h-full">
                 {nominations.map((nomination, idx) => <NominationCard key={idx} index={idx} nomination={nomination} />)}
             </div>}
     </div>

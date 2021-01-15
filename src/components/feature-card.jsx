@@ -23,7 +23,6 @@ const FeatureCard = ({ max }) => {
                     setMovies([])
                     setTotal(0)
                 }
-                console.log(res.data);
             });
         } else {
             setMovies([])
@@ -44,7 +43,6 @@ const FeatureCard = ({ max }) => {
 
     const handleChange = (e) => {
         setSearch(e.target.value);
-        console.log(search);
     }
 
     return <div className="flex items-center justify-center align-middle relative mb-16" >

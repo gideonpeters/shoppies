@@ -6,14 +6,10 @@ const NominationCard = ({ nomination, index }) => {
     const { nominations, setNominations } = useContext(MainContext);
 
     function removeNomination() {
-        // let index = nominations.indexOf(movie);
-        console.log(index)
-
         var modifiedNominations = [...nominations];
         modifiedNominations.splice(index, 1);
 
         setNominations(modifiedNominations);
-
     }
 
     return <div className="flex justify-between bg-white p-5 mt-5 items-center rounded">

@@ -14,13 +14,11 @@ const Pagination = () => {
                     setMovies(res.data["Search"])
                     // setCurrentPage(currentPage++);
                 }
-                console.log(res.data);
             });
         }
     }
 
     function increment() {
-        console.log(total > (currentPage * 10) + (10 - movies.length))
         if (total > (currentPage * 10) + (10 - movies.length)) {
             let page = currentPage + 1;
             setCurrentPage(page);

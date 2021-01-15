@@ -1,4 +1,3 @@
-// import { GiRoundStar } from "react-icons/gi";
 
 import { useContext } from "react";
 import MainContext from "../context/main-context";
@@ -12,10 +11,9 @@ const MovieCard = ({ movie }) => {
         if (!nominations.some(isContained)) {
             setNominations([...nominations, movie]);
         }
-        console.log(nominations.some(isContained))
-        console.log(movie)
-        console.log(nominations)
     }
+
+
 
     return <div className="flex">
         <div className="flex bg-blue-200 h-44 w-7/12 justify-between p-8 cursor-pointer mr-3" style={{ backgroundImage: `url(${movie["Poster"]})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center center' }}></div>
