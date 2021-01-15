@@ -1,4 +1,4 @@
-# The Shoppies: Movie awards for entrepreneurs
+#  🧨 The Shoppies: Movie awards for entrepreneurs
 
 💫 Deployed Link: [https://gideon-shoppies.netlify.app/](https://gideon-shoppies.netlify.app/)
 
